@@ -19,4 +19,3 @@ $config['database'] = [
 ];
 
 // Loading models
-require PATH_MODELS.'api_structure.mod.php';
