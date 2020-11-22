@@ -9,12 +9,7 @@ $config['database'] = [
         'name' => env('db.mysql.name'),
     ],
     'integrity_check' => [
-        'project',
-        'section',
-        'story',
-        'tag',
-        'task',
-        'user'
+        'user',
     ],
 ];
 
