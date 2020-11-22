@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to the PHP Framework Sarabel v1.0
 
 You can use the [editor on GitHub](https://github.com/daxdoxsi/sarabel-v1/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
 
