@@ -11,7 +11,8 @@
     <title><?php echo page_title($page_title);?></title>
 </head>
 <body>
-<h1>Hello, world!</h1>
+
+<?php echo $tpl_content; ?>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

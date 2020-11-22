@@ -3,14 +3,9 @@
 
 function index(){
 
-    // Cleaning session before continue
-    session_start();
-    session_destroy();
-
-    $content = view('pages/main/index',[], true);
-    view('templates/asana-login', [
-        'page_title' => 'Connect with Asana',
-        'content'=>$content
+    view('templates/default', [
+        'page_title'    => 'Sarabel v1.0',
+        'tpl_content'       => view('pages/main/index',[], true),
     ]);
 
 }
