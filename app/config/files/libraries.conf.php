@@ -13,4 +13,3 @@ require PATH_CORE_LIB.'mail.lib.php';
 require PATH_CORE_LIB.'form.lib.php';
 
 # Loading custom libs
-require PATH_LIBRARIES.'asana.lib.php';
