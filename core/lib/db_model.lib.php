@@ -167,10 +167,28 @@ class DB_Model {
 
         # Init vars
         global $config;
+        $output = [];
 
         $sql  = 'SELECT '.implode(',', $fields).' FROM `'.$config['database']['mysql']['name'].'`.`'.table_alias($this->table).'`';
         $sql .= ($joins === '' ? '' : ' '.$joins.' ').( $search === '' ? '' : ' WHERE '.$search);
-        return db_query($sql);
+
+        # Executing SQL for data extraction
+        $return = db_query($sql);
+
+        # Processing output array
+        foreach($return as $id => $row) {
+
+            foreach($row as $field => $value) {
+
+                # Remove the slashes previously added with db->set
+                $output[$id][$field] = stripslashes($value);
+
+            } # foreach $row
+
+        } # foreach $return
+
+        # Return an updated array
+        return $output;
 
     }
 
